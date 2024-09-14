@@ -11,21 +11,14 @@
   }
   
   /* Estilos para las secciones de contacto */
-  .contact-info{
-    background: #d1a4a4; /* Fondo blanco para las secciones */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    width: 50%;
-  }
   .contact-form {
-    background: #b04949; /* Fondo blanco para las secciones */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem
   }
   
   @media (min-width: 768px) {
