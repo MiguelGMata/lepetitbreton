@@ -1,0 +1,79 @@
+  .vibrant-header {
+    width: 100%;
+    height: 55vh; /* Ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  /* Fondo animado con transición de colores azules */
+  .vibrant-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #105779, #1e3a6e, #00509e, #105779);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    z-index: -1; /* Fondo detrás del contenido */
+  }
+  .vibrant-header h1,   
+  .vibrant-header h2{
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    font-size: 2em;
+  }
+  /* Animación de transición de colores en el fondo */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  /* Logo grande con animación de latido (latido como corazón) */
+  .logo-heartbeat {
+    height: 300px; /* Tamaño grande para que sea el foco principal */
+    animation: heartbeat 3s ease-in-out infinite; /* Animación de latido */
+    border-radius: 100%;
+  }
+  
+  /* Animación de latido (heartbeat) */
+  @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+      }
+      50% {
+        transform: scale(1.1);
+        filter: brightness(120%);
+      }
+      100% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+  }
+  
+  /* Responsive: ajustar el tamaño del logo en pantallas más pequeñas */
+  @media (min-width: 768px) {
+    .logo-heartbeat {
+      height: 400px;
+    }
+    .vibrant-header h1{
+      font-size: 2.5em;
+    }
+  }
+  

@@ -1,0 +1,115 @@
+/* Estilos generales */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #105779; 
+    color: white;
+    z-index: 1000;
+    height: 60px;
+  }
+
+  .logo img {       
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+  }
+  
+  /* Menú hamburguesa */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .menu-icon .icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Cuando el menú está abierto */
+  .menu-icon.open .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-icon.open .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Enlaces del menú en mobile */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1c3d5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    transform: translateY(-150%);
+  }
+  
+  .nav-links.open {
+    transform: translateY(0);
+  }
+  
+  .nav-links li {
+    list-style: none;
+    margin: 15px 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #61dafb; /* Un tono azul claro para resaltar */
+  }
+  
+  /* Estilos para escritorio: barra lateral */
+  @media(min-width: 768px) {
+    .menu-icon {
+      display: flex; /* Mantenemos el ícono de hamburguesa visible */
+    }  
+    .nav-links {
+      position: fixed;
+      top: 7%;
+      left: -250px; /* Fuera de la pantalla a la izquierda */
+      width: 250px;
+      height: 100%;
+      background-color: #1c3d5a;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      transition: left 0.3s ease;
+    }
+  
+    .nav-links.open {
+      left: 0; /* Menú lateral visible */
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    .nav-links li a {
+      font-size: 1.5rem;
+      padding: 10px 0;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* Estilos generales para la sección de bienvenida */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Fondo claro para contraste */
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilo del contenido de bienvenida */
+  .welcome-content {
+    margin-bottom: 20px;
+  }
+  
+  .welcome-content h1 {
+    font-size: 2.5rem;
+    color: #105779; 
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .highlight {
+    color: #e79f24; 
+    font-weight: bold;
+  }
+  .welcome-content p {
+    font-size: 1.2rem;
+    color: #333; 
+    line-height: 1.6;
+  }
+  
+  /* Estilos para las imágenes */
+  .welcome-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .welcome-image {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .welcome-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .welcome-content h1 {
+      font-size: 3rem;
+    }
+  
+    .welcome-content p {
+      font-size: 1.5rem;
+      margin: 0px;
+    }
+  }
+  

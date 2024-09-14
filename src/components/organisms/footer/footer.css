@@ -1,0 +1,166 @@
+/* Estilos generales del footer */
+.footer {
+  background: linear-gradient(45deg, #105779, #1e3a6e); /* Degradado azul */
+  color: #fff;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden; /* Asegura que los elementos flotantes no se salgan */
+}
+
+/* Contenido del footer */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Información del footer */
+.footer-info {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  background: -webkit-linear-gradient(45deg, #ff7e6d, #f3a847);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-info p, .footer-info address {
+  font-size: 0.875rem;
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: #ff7e6d; /* Color llamativo para enlaces */
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Enlaces del footer */
+.footer-links {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #f3a847; /* Color destacado en hover */
+}
+
+/* Redes sociales del footer */
+.footer-social {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Efecto de escala en hover */
+}
+
+.social-icon.facebook {
+  background-image: url('path/to/facebook-icon.png'); /* Reemplaza con la ruta a tu ícono de Facebook */
+}
+
+.social-icon.instagram {
+  background-image: url('path/to/instagram-icon.png'); /* Reemplaza con la ruta a tu ícono de Instagram */
+}
+
+.social-icon.twitter {
+  background-image: url('path/to/twitter-icon.png'); /* Reemplaza con la ruta a tu ícono de Twitter */
+}
+
+/* Sección inferior del footer */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Añadido decorativo */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 60%);
+  animation: background-pulse 10s infinite;
+  z-index: 0;
+}
+
+/* Animación de fondo */
+@keyframes background-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,101 @@
+/* Estilos generales para el componente Branch */
+.branch {
+    padding: 20px;
+    background: #f9f9f9; /* Fondo claro para destacar las imágenes */
+    text-align: center;
+  }
+  
+  .branch-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .branch-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .branch-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .branch-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 5px solid #105779; /* Borde inferior colorido */
+  }
+  
+  .branch-info {
+    padding: 20px;
+    background: #fff;
+    text-align: left;
+  }
+  
+  .branch-info h3 {
+    font-size: 1.75rem;
+    color: #105779; /* Color azul principal */
+    margin-bottom: 10px;
+  }
+  
+  .branch-info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  /* Animaciones de entrada */
+  .slide-left {
+    animation: slideInLeft 1s forwards;
+  }
+  
+  .slide-right {
+    animation: slideInRight 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .branch-card {
+      flex-direction: column;
+    }
+  }
+  

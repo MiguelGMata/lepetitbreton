@@ -1,0 +1,23 @@
+/* Main container for the page */
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .content {
+    position: relative; 
+    z-index: 1; 
+    height: 100%;
+    overflow: hidden; 
+  }
+  
+  /* Specific settings for large screens */
+  @media (min-width: 768px) {
+    .homepage-container {
+      flex-direction: column;
+    }
+  
+  }
