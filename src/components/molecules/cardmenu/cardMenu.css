@@ -11,6 +11,7 @@ margin-bottom: 40px;
 }
 .card-menu p{
     font-size: 1rem;
+   padding-bottom: 5vh;
 }
 .card-menu-container {
     display: flex;
@@ -72,7 +73,7 @@ margin-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     width: 30px;
     height: 30px;
     font-size: 30px;
