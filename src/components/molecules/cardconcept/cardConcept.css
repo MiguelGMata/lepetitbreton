@@ -19,7 +19,7 @@
   }
   
   .concept-title {
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     text-align: left;
     color: #105779;
@@ -31,7 +31,7 @@
   }
   
   .concept-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
     line-height: 1.5;
     animation: fadeInUp 1s ease-in-out;
