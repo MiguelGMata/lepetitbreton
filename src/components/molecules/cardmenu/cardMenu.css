@@ -1,5 +1,6 @@
 .card-menu {
 text-align: center;
+margin-bottom: 40px;
 }
 .card-menu h1{
     text-align: center;
@@ -16,7 +17,6 @@ text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-
 }
 
 .card-menu-card {
@@ -51,11 +51,15 @@ text-align: center;
     justify-content: center;
     align-items: center;
     background: #fff;
+    border: 10px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
 }
 
 .card-menu-card-front img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -72,6 +76,7 @@ text-align: center;
 .card-menu-card-back h3{
     font-size: 26px;
     text-align: center;
+    color: #f3a847;
 }
 .card-menu-card-back ul{
     font-size: 16px;
@@ -90,6 +95,22 @@ text-align: center;
 @media (min-width: 768px) {
     .card-menu-container {
         flex-direction: row;
-    
     }
+    .card-menu-card {
+        position: relative;
+        width: 500px;
+        height: 500px;
+    }
+    .card-menu h2{
+        font-size: 2rem;
+        margin: 0px;
+    }
+    .card-menu p{
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+    .card-menu-card-back h3{
+        font-size: 32px;
+    }
+       
 }

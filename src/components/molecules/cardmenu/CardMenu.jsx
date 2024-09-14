@@ -86,23 +86,23 @@ const CardMenu = () => {
       <h2>Faites vous plaisir.</h2>
       <p>Toutes nos préparations sont cuisinées maison</p>
       <div className="card-menu-container">
-        {cardMenus.map((cardMenu, index) => (
-          <div key={index} className="card-menu-card">
-            <div className="card-menu-card-inner">
-              <div className="card-menu-card-front">
-                <img src={cardMenu.image} alt={cardMenu.title} />
-              </div>
-              <div className="card-menu-card-back">
-                <h3>{cardMenu.title}</h3>
-                <ul>
-                  {cardMenu.items.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+            {cardMenus.map((cardMenu, index) => (
+            <div key={index} className="card-menu-card">
+                    <div className="card-menu-card-inner">
+                        <div className="card-menu-card-front">
+                            <img src={cardMenu.image} alt={cardMenu.title} />
+                        </div>
+                        <div className="card-menu-card-back">
+                            <h3>{cardMenu.title}</h3>
+                            <ul>
+                            {cardMenu.items.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                            ))}
+                            </ul>
+                        </div>
+                    </div>
             </div>
-          </div>
-        ))}
+            ))}
       </div>
     </section>
   );

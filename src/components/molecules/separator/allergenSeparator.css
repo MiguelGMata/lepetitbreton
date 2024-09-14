@@ -1,0 +1,45 @@
+.allergen-separator {
+    width: 100%; /* Ancho completo */
+    padding: 40px 0;
+    background: linear-gradient(270deg, #ffcc00, #ffd966, #fff4d4, #ffe596, #ffcc00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #105779; /* Azul oscuro para el texto */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.allergen-separator h2 {
+    font-size: 32px;
+    color: #105779; /* Título en azul */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.allergen-separator p {
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .allergen-separator h2 {
+        font-size: 42px;
+    }
+}
