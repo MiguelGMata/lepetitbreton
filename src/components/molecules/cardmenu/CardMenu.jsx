@@ -91,6 +91,7 @@ const CardMenu = () => {
                     <div className="card-menu-card-inner">
                         <div className="card-menu-card-front">
                             <img src={cardMenu.image} alt={cardMenu.title} />
+                            <button className="plus-button">+</button>
                         </div>
                         <div className="card-menu-card-back">
                             <h3>{cardMenu.title}</h3>

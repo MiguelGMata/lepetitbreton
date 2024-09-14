@@ -24,7 +24,7 @@ const Footer = () => {
             Paris, 75000<br />
             France
           </address>
-          <p>Email: <a href="mailto:contact@leptitbreton.fr">eptitbreton75002@gmail.com</a></p>
+          <p>Email : <a href="leptitbreton75002@gmail.com">leptitbreton75002@gmail.com</a></p>
           <p><a href="tel:+33188611626" onClick={handleTelClick}>Tel: +33 1 88 61 16 26</a></p>
         </div>
         <div className="footer-links">

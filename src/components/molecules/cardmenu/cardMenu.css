@@ -9,7 +9,9 @@ margin-bottom: 40px;
     font-weight: bold;
     color: #105779;
 }
-
+.card-menu p{
+    font-size: 1rem;
+}
 .card-menu-container {
     display: flex;
     flex-direction: column;
@@ -62,6 +64,23 @@ margin-bottom: 40px;
     height: 100%;
     object-fit: cover;
 }
+
+.plus-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .card-menu-card-back {
     display: flex;

@@ -4,6 +4,7 @@ import HomeScreen from '../pages/home/HomeScreen';
 import ConceptScreen from '../pages/concept/ConceptScreen';
 import MenuScreen from '../pages/menu/MenuScreen';
 import ContactScreen from '../pages/contact/ContactScreen';
+import Error from '../pages/error/Error';
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Route path="/notre-concept" element={<ConceptScreen />} />
       <Route path="/notre-carte" element={<MenuScreen />} />
       <Route path="/nous-rencontrer" element={<ContactScreen />} />
+      <Route path="/*" element={<Error />} />
     </Routes>
   );
 };
