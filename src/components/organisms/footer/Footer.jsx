@@ -6,6 +6,12 @@ import { faFacebook, faInstagram, faTiktok} from '@fortawesome/free-brands-svg-i
 import './footer.css'; 
 
 const Footer = () => {
+  const handleTelClick = (e) => {
+    e.preventDefault();
+    window.location.href = e.target.href;
+    window.scrollTo(0, 0); // Desplazar a la parte superior de la página
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -19,7 +25,7 @@ const Footer = () => {
             France
           </address>
           <p>Email: <a href="mailto:contact@leptitbreton.fr">eptitbreton75002@gmail.com</a></p>
-          <p><a href="tel:+33188611626">Tel: +33 1 88 61 16 26</a></p>
+          <p><a href="tel:+33188611626" onClick={handleTelClick}>Tel: +33 1 88 61 16 26</a></p>
         </div>
         <div className="footer-links">
           <h3>Liens Utiles</h3>

@@ -13,7 +13,8 @@
     height: 100%;
     overflow: hidden; 
   }
-  
+
+    
   /* Specific settings for large screens */
   @media (min-width: 768px) {
     .homepage-container {
