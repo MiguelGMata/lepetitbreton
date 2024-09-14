@@ -4,7 +4,7 @@
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   background: #105779;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -36,8 +36,8 @@
 /* Input field styles */
 .form-group input,
 .form-group textarea {
-  width: 90%;
-  padding: 12px;
+  width: 100%;
+  padding: 15px 0;
   margin-right: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;

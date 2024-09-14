@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={Image} alt="Logo" />
+        <Link  to="/"><img src={Image} alt="Logo" /></Link>
       </div>
       <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         {/* Ícono de hamburguesa que cambia a "X" cuando el menú está abierto */}
@@ -25,7 +25,6 @@ const Navbar = () => {
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </div>
-
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li><Link to="/" onClick={closeMenu}>Bienvenue</Link></li>
         <li><Link to="/notre-concept" onClick={closeMenu}>Notre concept</Link></li>

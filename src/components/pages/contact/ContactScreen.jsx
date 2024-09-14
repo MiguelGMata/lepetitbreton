@@ -17,8 +17,9 @@ const ContactScreen = () => {
         </p>
         <p>Merci d'éviter, si possible, les heures de services pour nous contacter. </p>
       </section>
-      <ContactForm/>
       <Branch/>
+      <ContactForm/>
+
     </main>
   );
 };

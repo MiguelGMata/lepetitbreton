@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok} from '@fortawesome/free-brands-svg-icons';
 
@@ -18,15 +19,15 @@ const Footer = () => {
             France
           </address>
           <p>Email: <a href="mailto:contact@leptitbreton.fr">eptitbreton75002@gmail.com</a></p>
-          <p>Tel: +33 1 88 61 16 26</p>
+          <p><a href="tel:+33188611626">Tel: +33 1 88 61 16 26</a></p>
         </div>
         <div className="footer-links">
           <h3>Liens Utiles</h3>
           <ul>
-            <li><a href="/">Bienvenue</a></li>
-            <li><a href="/notre-concept">Notre concept</a></li>
-            <li><a href="/notre-carte">Notre carte</a></li>
-            <li><a href="/nous-rencontrer">Nous rencontrer</a></li>
+            <li><Link to="/">Bienvenue</Link></li>
+            <li><Link to="/notre-concept">Notre concept</Link></li>
+            <li><Link to="/notre-carte">Notre carte</Link></li>
+            <li><Link to="/nous-rencontrer">Nous rencontrer</Link></li>
           </ul>
         </div>
         <div className="footer-social">
