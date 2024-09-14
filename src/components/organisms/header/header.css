@@ -29,7 +29,7 @@
     text-align: center;
     padding: 0px;
     margin: 5px;
-    font-size: 2em;
+    font-size: 1.2em;
   }
   /* Animación de transición de colores en el fondo */
   @keyframes gradient-animation {
