@@ -7,7 +7,7 @@ const CardConcept = () => {
     <div className="concept">
       <div className="concept-content">
         <div className="concept-column">
-          <h1 className="concept-title">Une <spam className="span-crepe">crêperie</spam> à volonté !</h1>
+          <h1 className="concept-title">Une <span className="span-crepe">crêperie</span> à volonté !</h1>
         </div>
         <div className="concept-column">
           <p className="concept-text">

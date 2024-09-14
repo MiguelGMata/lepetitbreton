@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Image from '../../../assets/images/logo.png';
 import './navbar.css'; 
 
@@ -26,10 +27,10 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="/" onClick={closeMenu}>Bienvenue</a></li>
-        <li><a href="/notre-concept" onClick={closeMenu}>Notre concept</a></li>
-        <li><a href="#notre-carte" onClick={closeMenu}>Notre carte</a></li>
-        <li><a href="#nous-rencontrer" onClick={closeMenu}>Nous rencontrer</a></li>
+        <li><Link to="/" onClick={closeMenu}>Bienvenue</Link></li>
+        <li><Link to="/notre-concept" onClick={closeMenu}>Notre concept</Link></li>
+        <li><Link to="/notre-carte" onClick={closeMenu}>Notre carte</Link></li>
+        <li><Link to="nous-rencontrer" onClick={closeMenu}>Nous rencontrer</Link></li>
       </ul>
     </nav>
   );

@@ -3,7 +3,6 @@ import Imagen1 from '../../../assets/images/local1.jpg';
 import Imagen2 from '../../../assets/images/local2.jpg';
 import './branch.css'; 
 
-
 const branches = [
   {
     name: "Le P'tit Breton | Opéra",
@@ -33,12 +32,21 @@ const Branch = () => {
           entry.target.classList.remove('visible');
         }
       });
-    }, { threshold: 0.1 });  // Detecta cuando el 10% del elemento es visible
+    }, { threshold: 0.1 });
 
-    branchRefs.current.forEach(ref => observer.observe(ref));
+    // Asegúrate de que las referencias sean válidas antes de observar
+    branchRefs.current.forEach(ref => {
+      if (ref instanceof Element) {
+        observer.observe(ref);
+      }
+    });
 
     return () => {
-      branchRefs.current.forEach(ref => observer.unobserve(ref));
+      branchRefs.current.forEach(ref => {
+        if (ref instanceof Element) {
+          observer.unobserve(ref);
+        }
+      });
     };
   }, []);
 
