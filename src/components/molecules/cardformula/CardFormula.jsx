@@ -3,7 +3,7 @@ import Images1 from '../../../assets/images/formula1.jpg'
 import Images2 from '../../../assets/images/formula2.jpg'
 import Images3 from '../../../assets/images/formula3.jpg'
 import Images4 from '../../../assets/images/formula4.jpg'
-import './cardFormula.css'; 
+import './cardFormulas.css'; 
 
 const formulas = [
   { title: "Formule à Volonté", price: "29,90€", imageUrl: Images1 },
