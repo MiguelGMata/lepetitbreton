@@ -5,6 +5,8 @@ import CardFormula from '../../molecules/cardformula/CardFormula';
 import Branch from '../../molecules/branch/Branch';
 import Journalist from '../../molecules/journalist/Journalist';
 import CardConcept from '../../molecules/cardconcept/CardConcept';
+import CardMenu from '../../molecules/cardmenu/CardMenu';
+import AllergenSeparator from '../../molecules/separator/AllergenSeparator';
 
 import './homeScreen.css'; 
 
@@ -17,6 +19,8 @@ const HomeScreen = () => {
         <WelcomeSection/>
         <CardConcept/>
         <CardFormula/>
+        <CardMenu/>
+        <AllergenSeparator/>
         <Branch/>
         <Journalist/>
       </div>

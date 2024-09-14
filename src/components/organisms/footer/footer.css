@@ -95,12 +95,17 @@
   gap: 20px;
 }
 
-.social-icon {
+.social-icon{
   width: 35px;
   height: 35px;
   background-size: cover;
   background-repeat: no-repeat;
   transition: transform 0.3s;
+}
+.footer-social a {
+  font-size: 30px;
+  margin: 5px 0; 
+  color: #fff;
 }
 
 .social-icon:hover {
