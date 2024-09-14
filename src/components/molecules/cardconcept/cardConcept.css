@@ -1,0 +1,74 @@
+/* Estilos base: Mobile-first */
+.concept {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: relative;
+  }
+  
+  .concept-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  
+  .concept-column {
+    flex: 1;
+  }
+  
+  .concept-title {
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: left;
+    color: #105779;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  .span-crepe{
+    color: #e79f24; 
+    font-weight: bold;
+  }
+  
+  .concept-text {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .concept-image {
+    margin-top: 2rem;
+  }
+  
+  .concept-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .concept-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para pantallas más grandes (tablet y desktop) */
+  @media (min-width: 768px) {
+    .concept-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .concept-title {
+      font-size: 10rem;
+    }
+  
+    .concept-text {
+      font-size: 2rem;
+    }
+    .concept-image img {
+        width: 50%;
+      }
+  }
+  

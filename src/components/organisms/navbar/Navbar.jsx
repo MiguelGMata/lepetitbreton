@@ -26,8 +26,8 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="#bienvenue" onClick={closeMenu}>Bienvenue</a></li>
-        <li><a href="#notre-concept" onClick={closeMenu}>Notre concept</a></li>
+        <li><a href="/" onClick={closeMenu}>Bienvenue</a></li>
+        <li><a href="/notre-concept" onClick={closeMenu}>Notre concept</a></li>
         <li><a href="#notre-carte" onClick={closeMenu}>Notre carte</a></li>
         <li><a href="#nous-rencontrer" onClick={closeMenu}>Nous rencontrer</a></li>
       </ul>
