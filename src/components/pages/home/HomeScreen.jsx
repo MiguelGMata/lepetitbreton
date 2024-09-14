@@ -9,8 +9,6 @@ import CardConcept from '../../molecules/cardconcept/CardConcept';
 import './homeScreen.css'; 
 
 
-
-
 const HomeScreen = () => {
   return (
     <main className="homepage-container">

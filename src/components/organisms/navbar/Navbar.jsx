@@ -30,7 +30,7 @@ const Navbar = () => {
         <li><Link to="/" onClick={closeMenu}>Bienvenue</Link></li>
         <li><Link to="/notre-concept" onClick={closeMenu}>Notre concept</Link></li>
         <li><Link to="/notre-carte" onClick={closeMenu}>Notre carte</Link></li>
-        <li><Link to="nous-rencontrer" onClick={closeMenu}>Nous rencontrer</Link></li>
+        <li><Link to="/nous-rencontrer" onClick={closeMenu}>Nous rencontrer</Link></li>
       </ul>
     </nav>
   );

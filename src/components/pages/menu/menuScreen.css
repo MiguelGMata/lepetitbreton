@@ -1,0 +1,37 @@
+/* contactScreen.css */
+
+/* Estilos generales para el contenedor principal */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Estilos para las secciones de contacto */
+  .menu-info{
+    background: #d1a4a4; /* Fondo blanco para las secciones */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+  }
+  .menu-form {
+    background: #b04949; /* Fondo blanco para las secciones */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-info,
+    .menu-form {
+      margin: 40px auto;
+      padding: 40px;
+      width: 50%;
+    }
+  
+  }
+  
