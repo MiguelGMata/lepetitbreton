@@ -7,16 +7,22 @@ Création d’un Site Web Responsive pour une Crêperie
 
 Pour ce projet, j'ai développé un site web moderne et entièrement responsive pour une crêperie locale, en utilisant ReactJS pour garantir une expérience utilisateur fluide et dynamique. Le site est conçu pour s'adapter parfaitement à tous les types d'écrans, que ce soit sur desktop, tablette ou mobile, offrant ainsi une navigation intuitive et agréable..
 
-🏠 Homepage <br/>
+🏠 Homepage 
+<br/>
+<br/>
 💻 Tech Stack: <br/>
 Reactjs HTML5 CSS3 JavaScript GitHub Git 
 
 Author
+<br/>
 👤 Miguel Mata
 
 GitHub
+<br/>
 LinkedIn
+<br/>
 Montrez votre soutien
+<br/>
 Donnez un ⭐️ si ce projet vous a aidé !
 
 Maquette
